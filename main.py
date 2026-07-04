@@ -8,7 +8,17 @@ from rich.panel import Panel
 client = genai.Client()
 console = Console()
 
-target_folder = "C:/Users/Atharv/Documents/Codes/Summer_Assignment_25112CN382/Week-5/Day-30"
+user_input_path = input("Enter the path to your C++ directory (or press Enter for default): ").strip()
+
+if user_input_path:
+    target_folder = user_input_path
+else:
+    target_folder = "C:/Users/Atharv/Documents/Codes/C++"
+
+if not os.path.exists(target_folder):
+    console.print(f"[bold red]Error: The directory path '{target_folder}' does not exist. Please check your spelling and try again.[/bold red]")
+    exit(1)
+
 all_files = os.listdir(target_folder)
 
 console.print("[bold green]Starting AI Code Auditor Engine...[/bold green]\n")
