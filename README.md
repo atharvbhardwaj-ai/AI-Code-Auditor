@@ -19,11 +19,13 @@ The application handles source code auditing through a synchronized multi-stage 
 Run the execution command within your active terminal window:
 ```bash
 pip install google-genai rich
+```
 
 ### 2. Environmental Security
 The script securely queries authentication tokens straight from the host OS environment block. Configure your terminal environment variable securely:
 ```powershell
 $env:GEMINI_API_KEY="YOUR_SECURE_DEVELOPER_KEY_HERE"
+```
 
 
 ## Usage & Execution
@@ -31,6 +33,7 @@ $env:GEMINI_API_KEY="YOUR_SECURE_DEVELOPER_KEY_HERE"
 To fire up the automated scanning pipeline across your targeted C++ source sheets, run the main production engine file:
 ```bash
 python 09_code_auditor_2.0.py
+```
 
 
 ## Project Progression & Milestone Log
