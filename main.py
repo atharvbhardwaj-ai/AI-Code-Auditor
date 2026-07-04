@@ -30,11 +30,11 @@ for file_name in all_files:
             ),
         )
 
-        # Render the AI text response inside a beautiful, framed UI Panel
+        # Render the AI text response inside a framed UI Panel
         console.print(Panel(response.text, title=f"Audit Report: {file_name}", border_style="cyan"))
         print("\n")
 
-        # The Pacer Check: Pause for 3 seconds to keep us safely below the 20 Requests Per Minute limit
+        # The Pacer Check: Pause for 3 seconds to keep the Auditor safely below the 20 Requests Per Minute limit
         time.sleep(3)
 
 console.print("[bold green]All files successfully audited and finalized![/bold green]")

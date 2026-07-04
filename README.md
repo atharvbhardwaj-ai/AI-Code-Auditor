@@ -32,7 +32,7 @@ $env:GEMINI_API_KEY="YOUR_SECURE_DEVELOPER_KEY_HERE"
 
 To fire up the automated scanning pipeline across your targeted C++ source sheets, run the main production engine file:
 ```bash
-python 09_code_auditor_2.0.py
+python main.py
 ```
 
 
